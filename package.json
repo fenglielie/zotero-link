@@ -1,6 +1,7 @@
 {
   "name": "zotero-link",
   "displayName": "zotero_link",
+  "repository": "https://github.com/HopeCollector/zotero-link.git",
   "description": "Open Markdown links in Zotero items directly in Zotero stand-alone",
   "version": "0.0.1",
   "engines": {

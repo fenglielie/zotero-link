@@ -1,7 +1,6 @@
 // The module 'vscode' contains the VS Code extensibility API
 // Import the module and reference it with the alias vscode in your code below
 import * as vscode from 'vscode';
-import * as cp from 'child_process';
 
 const platformOpenCommand: Record<NodeJS.Platform, string> = {
 	win32: 'start ""',
@@ -32,14 +31,17 @@ export function activate(context: vscode.ExtensionContext) {
 			vscode.window.showErrorMessage('No Zotero link provided.');
 			return;
 		}
-		const terminalCommand = `${platformOpenCommand[process.platform]} "${uri}"`;
-		cp.exec(terminalCommand, (err: Error | null, stdout: string, stderr: string) => {
-			// console.log('stdout: ' + stdout);
-			// console.log('stderr: ' + stderr);
-			if (err) {
-				vscode.window.showErrorMessage(`Could not open Zotero link: ${err}.`);
+		// Use VS Code API to open the link on the UI side
+		vscode.env.openExternal(vscode.Uri.parse(uri)).then(
+			(success) => {
+				if (!success) {
+					vscode.window.showErrorMessage('Could not open Zotero link.');
+				}
+			},
+			(err) => {
+				vscode.window.showErrorMessage(`Could not open Zotero link: ${err}`);
 			}
-		});
+		);
 	};
 
 

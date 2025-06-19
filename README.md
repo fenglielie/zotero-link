@@ -31,9 +31,13 @@ These links work properly in a browser, but not in VSCode. This plugin was creat
 
 Users see my release notes when I release a new version.
 
-### 1.0.0
+### 0.0.1
 
 Initial release
+
+### 0.0.2
+
+The extension behavior is changed to open the link on the ui side.
 
 ## Acknowledgements
 

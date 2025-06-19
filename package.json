@@ -1,9 +1,13 @@
 {
   "name": "zotero-link",
   "displayName": "zotero_link",
-  "repository": "https://github.com/HopeCollector/zotero-link.git",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/HopeCollector/zotero-link.git"
+  },
+  "homepage": "https://github.com/HopeCollector/zotero-link/blob/master/README.md",
   "description": "Open Markdown links in Zotero items directly in Zotero stand-alone",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "license": "MIT",
   "publisher": "HopeCollector",
   "engines": {

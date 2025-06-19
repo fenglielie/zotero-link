@@ -8,6 +8,8 @@ Zotero is a very popular academic management tool. Although it provides its own 
 
 These links work properly in a browser, but not in VSCode. This plugin was created to solve this problem, allowing you to use Ctrl+left mouse click on Zotero links in Markdown notes to jump to the corresponding original text in Zotero.
 
+You can download the <https://marketplace.visualstudio.com/items?itemName=HopeCollector.zotero-link> here, or search for `zotero_link` installation directly in vscode.
+
 ## Features
 
 1. Drag the original text into the note.

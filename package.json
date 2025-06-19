@@ -4,6 +4,8 @@
   "repository": "https://github.com/HopeCollector/zotero-link.git",
   "description": "Open Markdown links in Zotero items directly in Zotero stand-alone",
   "version": "0.0.1",
+  "license": "MIT",
+  "publisher": "HopeCollector",
   "engines": {
     "vscode": "^1.100.0"
   },

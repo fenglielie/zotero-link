@@ -50,7 +50,7 @@ export function activate(context: vscode.ExtensionContext) {
 	// This allows users to click on Zotero links in markdown files
 	// and open them directly in Zotero
 	const commandDisposable = vscode.commands.registerCommand(commandID, jumpHandler);
-	const clickDisposable = vscode.languages.registerDocumentLinkProvider('markdown', {
+	const clickDisposable = vscode.languages.registerDocumentLinkProvider(['markdown', 'latex', 'tex'], {
         provideDocumentLinks(document, token) {
             const text = document.getText();
             const regex = /zotero:\/\/[&\w/?=-]+/g;

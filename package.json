@@ -17,7 +17,9 @@
     "Other"
   ],
   "activationEvents": [
-    "onLanguage:markdown"
+    "onLanguage:markdown",
+    "onLanguage:latex",
+    "onLanguage:tex"
   ],
   "main": "./out/extension.js",
   "contributes": {
